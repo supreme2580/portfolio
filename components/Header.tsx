@@ -20,7 +20,7 @@ export default function Header() {
             }}
             className="flex flex-row items-center">
                 {/* Social icons */}
-                <SocialIcon url="https://twitter.com/VictorOmorogbe3" fgColor="gray" bgColor="transparent" />
+                <SocialIcon url="https://www.facebook.com/victor.omorogbe.165" fgColor="gray" bgColor="transparent" />
                 <SocialIcon url="http://discordapp.com/users/Supreme2580#2263" bgColor="gray" />
                 <SocialIcon url="https://twitter.com/VictorOmorogbe3" fgColor="gray" bgColor="transparent" />
                 <SocialIcon url="https://twitter.com/VictorOmorogbe3" fgColor="gray" bgColor="transparent" />
