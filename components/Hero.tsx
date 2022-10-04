@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { Cursor, useTypewriter } from "react-simple-typewriter"
 import BackgroundCircles from "./BackgroundCircles"
 
@@ -23,6 +24,12 @@ export default function Hero() {
                     <span className="mr-3">{text}</span>
                     <Cursor cursorColor="#F7AB0A" />          
                 </h1>             
+            </div>
+            <div className="pt-5 z-20">
+                <Link href="#about"><a><button className="heroButton">About</button></a></Link>
+                <Link href="#experience"><a><button className="heroButton">Experience</button></a></Link>
+                <Link href="#skills"><a><button className="heroButton">Skills</button></a></Link>
+                <Link href="#projects"><a><button className="heroButton">Projects</button></a></Link>
             </div>
         </div>
     )

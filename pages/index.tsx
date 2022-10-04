@@ -12,7 +12,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      {/* Hero */}
       <section id="hero" className='snap-center'>
         <Hero />
       </section>
