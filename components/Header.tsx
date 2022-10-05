@@ -20,11 +20,11 @@ export default function Header() {
             }}
             className="flex flex-row items-center">
                 {/* Social icons */}
-                <SocialIcon url="https://www.facebook.com/victor.omorogbe.165" fgColor="gray" bgColor="transparent" />
-                <SocialIcon url="https://wa.link/32s95d" network="whatsapp" fgColor="gray" bgColor="transparent" />
-                <SocialIcon url="https://twitter.com/VictorOmorogbe3" fgColor="gray" bgColor="transparent" />
-                <SocialIcon url="http://discordapp.com/users/Supreme2580#2263" bgColor="gray" />
-                <SocialIcon url="https://github.com/supreme2580" fgColor="gray" bgColor="transparent" />
+                <SocialIcon url="https://www.facebook.com/victor.omorogbe.165" fgColor="gray" bgColor="transparent" target="_blank" />
+                <SocialIcon url="https://wa.link/32s95d" network="whatsapp" fgColor="gray" bgColor="transparent" target="_blank" />
+                <SocialIcon url="https://twitter.com/VictorOmorogbe3" fgColor="gray" bgColor="transparent" target="_blank" />
+                <SocialIcon url="http://discordapp.com/users/Supreme2580#2263" bgColor="gray" target="_blank" />
+                <SocialIcon url="https://github.com/supreme2580" fgColor="gray" bgColor="transparent" target="_blank" />
             </motion.div>
             <motion.div
             initial={{
