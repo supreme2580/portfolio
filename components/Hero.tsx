@@ -9,13 +9,13 @@ export default function Hero() {
             "Hi, The Name's Victor Omorogbe",
             "Guy-who-loves-tech.tsx",
             "<WithAPassionForCoding />",
-            "LetBuildSomething.js"
+            "LetBuildSomethingCool.js"
         ],
         loop: true,
         delaySpeed: 2000
     })
     return(
-        <div className="min-h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+        <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
             <BackgroundCircles />
             <Image src={"/profilepic.jpg"} width={125} height={125} className="rounded-full relative mx-auto object-cover" alt="Profile Image" />
             <div>
