@@ -1,14 +1,10 @@
 import { motion } from "framer-motion"
 
-type Props = {
-    directionLeft?: boolean;
-};
-
-export default function Skill({ directionLeft }: Props) {
+export default function Skill() {
     return(
         <div className="group relative flex cursor-pointer">
             <motion.img
-                initial={{ y: directionLeft ? -100 : 100, opacity: 0 }}
+                initial={{ opacity: 0 }}
                 transition={{ duration: 1 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 className="rounded-full w-24 h-24 border border-gray-400 xl:h-32 xl:w-32 filter group-hover:grayscale transition duration-300 ease-in-out"
