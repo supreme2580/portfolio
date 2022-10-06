@@ -31,22 +31,22 @@ export default function Home ({ words, experience, skills, projects } : Props) {
         <link rel="icon" href="/profilepic.jpg" />
       </Head>
       <Header />
-      <section id="hero" className='snap-start'>
+      <section id="hero">
         <Hero words={wordList} />
       </section>
-      <section id="about" className='snap-start'>
+      <section id="about">
         <About />
       </section>
-      <section id='experience' className='snap-start'>
+      <section id='experience'>
         <Experience experience={experience} />
       </section>
-      <section id='skills' className='snap-center'>
+      <section id='skills'>
         <Skills skills={skills} />
       </section>
-      <section id='projects' className='snap-start'>
+      <section id='projects'>
         <Projects projects={projects} />
       </section>
-      <section id='contact' className='snap-end py-16'>
+      <section id='contact' className='py-16'>
         <Contact />
       </section>
     </div>
