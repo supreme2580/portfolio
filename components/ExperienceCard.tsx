@@ -49,7 +49,7 @@ export default function ExperienceCard({ image, title, name, techStack, startDat
                     {
                         techStack.map(
                             item => (
-                                <div className="min-w-[55px] h-14 relative">
+                                <div className="min-w-[55px] h-14 relative" key={item.asset._ref}>
                                     <Image src={`${urlFor(item.asset._ref)}`} width={50} height={50} className="rounded-full object-center" layout="fill" />
                                 </div>
                             )
