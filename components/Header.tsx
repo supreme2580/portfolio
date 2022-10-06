@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Header() {
     return(
-        <header className="sticky top-0 flex items-start justify-center sm:justify-between max-w-7xl mx-auto z-20 xl:items-center p-5">
+        <header className="lg:sticky top-0 flex items-start justify-center sm:justify-between max-w-7xl mx-auto z-20 xl:items-center p-5 snap-start">
             <motion.div
             initial={{
                 x: -500,
