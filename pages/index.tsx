@@ -10,14 +10,16 @@ import { sanityClient } from "../sanity"
 import Word from '../words'
 import Exp from "../exp"
 import Skl from '../skills'
+import Proj from '../projects'
 
 interface Props {
   words: [Word],
   experience: [Exp],
-  skills: [Skl]
+  skills: [Skl],
+  projects: [Proj]
 }
 
-export default function Home ({ words, experience, skills } : Props) {
+export default function Home ({ words, experience, skills, projects } : Props) {
   var wordList: string[] = []
   words.map(word => wordList.push(word.word))
   return (
@@ -42,7 +44,7 @@ export default function Home ({ words, experience, skills } : Props) {
         <Skills skills={skills} />
       </section>
       <section id='projects' className='snap-start'>
-        <Projects />
+        <Projects projects={projects} />
       </section>
       <section id='contact' className='snap-end py-16'>
         <Contact />
@@ -68,7 +70,6 @@ export async function getServerSideProps() {
       endDate
     }
   `
-
   const skillsQuery = `
     *[_type == "skills"]{
       _id,
@@ -76,14 +77,24 @@ export async function getServerSideProps() {
       percentage
     }
   `
+  const projectQuery = `
+    *[_type == "projects"]{
+      _id,
+      image,
+      title,
+      description
+    }
+  `
   const words = await sanityClient.fetch(wordsQuery)
   const experience = await sanityClient.fetch(experienceQuery)
   const skills = await sanityClient.fetch(skillsQuery)
+  const projects = await sanityClient.fetch(projectQuery)
   return {
     props: {
       words,
       experience,
-      skills
+      skills,
+      projects
     }
   }
 }
