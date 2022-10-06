@@ -9,7 +9,7 @@ export default function Projects() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="min-h-screen relative flex flex-col overflow-hidden text-left mt-56 md:flex-row max-w-full justify-evenly mx-auto items-center z-0 px-5">
+        className="min-h-screen relative flex flex-col overflow-hidden text-left mt-64 md:flex-row max-w-full justify-evenly mx-auto items-center z-0 px-5">
             <h1 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">Projects</h1>
             <BackgroundStripe />
             <div className="relative w-full flex space-x-5 overflow-x-scroll scrollbar-hide snap-x snap-mandatory z-20 max-w-6xl px-5 mt-36">
