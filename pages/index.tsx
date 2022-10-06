@@ -32,7 +32,7 @@ const Home: NextPage = () => {
       <section id='projects' className='snap-start'>
         <Projects />
       </section>
-      <section id='contact' className='snap-start'>
+      <section id='contact' className='snap-end'>
         <Contact />
       </section>
     </div>

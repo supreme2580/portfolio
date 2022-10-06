@@ -12,7 +12,7 @@ export default function Contact() {
     const { register, handleSubmit } = useForm<Inputs>()
     const onSubmit: SubmitHandler<Inputs> = formData => console.log(formData)
     return(
-        <div className="min-h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly max-auto items-center mb-20">
+        <div className="min-h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly max-auto items-center mb-10">
             <h3 className="uppercase tracking-[10px] text-gray-500 text-2xl absolute top-24">Contact Me</h3>
             <div className="flex flex-col space-y-10 items-center mt-32">
                 <h4 className="text-2xl xl:text-4xl font-semibold text-center mt-5">Let{"'"}s build something cool.{" "}
@@ -29,7 +29,7 @@ export default function Contact() {
                     </div>
                     <div className="flex items-center justify-center space-x-5">
                         <MailIcon className="w-7 h-7 text-[#F7AB0A] animate-pulse" />
-                        <p className="text-lg">victoromorogbe69@gmail.com</p>
+                        <p className="text-lg sm:text-2xl">victoromorogbe69@gmail.com</p>
                     </div>
                 </div>
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 w-fit mx-auto">
