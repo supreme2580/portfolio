@@ -21,7 +21,7 @@ const Home = ({ words } : Props) => {
       <Head>
         <title>Victor Omorogbe Portfolio</title>
         <meta name="description" content="Hi welcome to Victor's portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/profilepic.jpg" />
       </Head>
       <Header />
       <section id="hero" className='snap-start'>
