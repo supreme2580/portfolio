@@ -11,7 +11,12 @@ interface Props {
 
 export default function Hero({ words }: Props) {
     const [text, count] = useTypewriter({
-        words: words,
+        words: [
+            "Hi, The Name's Victor Omorogbe",
+            "Guy-who-loves-tech.tsx",
+            "<WithAPassionForCoding />",
+            "LetBuildSomethingCool.js"
+        ],
         loop: true,
         delaySpeed: 2000
     })
