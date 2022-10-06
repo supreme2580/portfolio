@@ -12,6 +12,7 @@ export default function Experience({ experience }: Props) {
             <div className="flex overflow-x-scroll scrollbar-hide space-x-5 max-w-full text-left p-10 snap-x snap-mandatory">
                 {
                     experience.map(exp => <ExperienceCard
+                        key={exp._id}
                         image={exp.image}
                         title={exp.title}
                         name={exp.name}

@@ -57,6 +57,7 @@ export async function getServerSideProps() {
   `
   const experienceQuery = `
     *[_type == "experience"]{
+      _id,
       image,
       title,
       name,

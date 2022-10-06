@@ -1,4 +1,5 @@
 export default interface Exp {
+    _id: string,
     title: string,
     name: string,
     image: {
