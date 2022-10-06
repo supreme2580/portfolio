@@ -7,13 +7,15 @@ import Hero from '../components/Hero'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import { sanityClient } from "../sanity"
-import Word from '../typings'
+import Word from '../words'
+import Exp from "../exp"
 
 interface Props {
-  words: [Word]
+  words: [Word],
+  experience: [Exp]
 }
 
-export default function Home ({ words } : Props) {
+export default function Home ({ words, experience } : Props) {
   var wordList: string[] = []
   words.map(word => wordList.push(word.word))
   return (
@@ -32,7 +34,7 @@ export default function Home ({ words } : Props) {
         <About />
       </section>
       <section id='experience' className='snap-start'>
-        <Experience />
+        <Experience experience={experience} />
       </section>
       <section id='skills' className='snap-center'>
         <Skills />
@@ -48,15 +50,27 @@ export default function Home ({ words } : Props) {
 }
 
 export async function getServerSideProps() {
-  const query = `
+  const wordsQuery = `
     *[_type == "words"]{
       word
     }
   `
-  const words = await sanityClient.fetch(query)
+  const experienceQuery = `
+    *[_type == "experience"]{
+      image,
+      title,
+      name,
+      techStack,
+      startDate,
+      endDate
+    }
+  `
+  const words = await sanityClient.fetch(wordsQuery)
+  const experience = await sanityClient.fetch(experienceQuery)
   return {
     props: {
-      words
+      words,
+      experience
     }
   }
 }
