@@ -1,5 +1,6 @@
 import { SocialIcon } from "react-social-icons"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 export default function Header() {
     return(
@@ -42,8 +43,13 @@ export default function Header() {
             }}
             className="flex flex-row items-center text-gray-300 cursor-pointer">
                 {/* Contact me */}
-                <SocialIcon network="email" fgColor="gray" bgColor="transparent" className="cursor-pointer" />
-                <p className="uppercase hidden md:inline-flex text-sm text-gray-400">Get in touch</p>
+                <Link href={"#contact"}>
+                    <a>
+                        <SocialIcon network="email" fgColor="gray" bgColor="transparent" className="cursor-pointer" />
+                        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">Get in touch</p>
+                    </a>
+                </Link>
+                
             </motion.div>
         </header>
     )
