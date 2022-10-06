@@ -12,7 +12,7 @@ export default function Contact() {
     const { register, handleSubmit } = useForm<Inputs>()
     const onSubmit: SubmitHandler<Inputs> = formData => console.log(formData)
     return(
-        <div className="min-h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly max-auto items-center">
+        <div className="min-h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly max-auto items-center mb-20">
             <h3 className="uppercase tracking-[10px] text-gray-500 text-2xl absolute top-24">Contact Me</h3>
             <div className="flex flex-col space-y-10 items-center mt-32">
                 <h4 className="text-2xl xl:text-4xl font-semibold text-center mt-5">Let{"'"}s build something cool.{" "}
@@ -35,11 +35,11 @@ export default function Contact() {
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 w-fit mx-auto">
                     <div className="flex flex-col space-x-0 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-2">
                         <input {...register("name")} type="text" className="contactInput" placeholder="Name" />
-                        <input {...register("email")} type="text" className="contactInput" placeholder="Email" />
+                        <input {...register("email")} type="email" className="contactInput" placeholder="Email" />
                     </div>
                     <input {...register("subject")} type="text" className="contactInput" placeholder="Subject" />
                     <textarea {...register("message")} className="contactInput" placeholder="Message" />
-                    <button type="submit" className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg">Submit</button>
+                    <button type="submit" className="bg-[#F7AB0A] py-2.5 px-10 rounded-md text-black font-bold text-lg">Submit</button>
                 </form>
             </div>
         </div>
