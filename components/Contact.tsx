@@ -14,7 +14,7 @@ export default function Contact() {
         window.location.href = `mailto:victoromorogbe69@gmail.com?subject=${formData.subject}&body=Hi my name is ${formData.name}, ${formData.message} (${formData.email})`
     }
     return(
-        <div className="min-h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly max-auto items-center pb-10">
+        <div className="min-h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly max-auto items-center">
             <h3 className="uppercase tracking-[10px] text-gray-500 text-2xl absolute top-24">Contact Me</h3>
             <div className="flex flex-col space-y-10 items-center mt-32">
                 <h4 className="text-2xl xl:text-4xl font-semibold text-center mt-5">Let{"'"}s build something cool.{" "}
