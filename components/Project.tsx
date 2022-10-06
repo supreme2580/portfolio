@@ -18,7 +18,7 @@ export default function Project({  image, title, description, index, length }: P
                                 transition={{ duration: 1.2 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                src={`${urlFor(image)}`} className="w-[285px] h-64" />
+                                src={`${urlFor(image)}`} className="w-[285px] md:w-[450px] h-64" />
                         </div>
                         <div className="space-y-2.5 max-w-[300px] lg:max-w-lg">
                             <h4 className="text-lg md:text-3xl xl:text-4xl font-semibold text-center">
