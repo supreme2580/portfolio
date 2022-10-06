@@ -4,19 +4,12 @@ import { Cursor, useTypewriter } from "react-simple-typewriter"
 import BackgroundCircles from "./BackgroundCircles"
 
 interface Props {
-    words: [
-      word: string
-    ]
+    words: string[]
 }
 
 export default function Hero({ words }: Props) {
     const [text, count] = useTypewriter({
-        words: [
-            "Hi, The Name's Victor Omorogbe",
-            "Guy-who-loves-tech.tsx",
-            "<WithAPassionForCoding />",
-            "LetBuildSomethingCool.js"
-        ],
+        words: words,
         loop: true,
         delaySpeed: 2000
     })

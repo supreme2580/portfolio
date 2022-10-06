@@ -7,14 +7,15 @@ import Hero from '../components/Hero'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import { sanityClient } from "../sanity"
+import Word from '../typings'
 
 interface Props {
-  words: [
-    word: string
-  ]
+  words: [Word]
 }
 
 export default function Home ({ words } : Props) {
+  var wordList: string[] = []
+  words.map(word => wordList.push(word.word))
   return (
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory z-0 overflow-y-scroll overflow-x-hidden scroll-smooth
       scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scrollbar-thin'>
@@ -25,7 +26,7 @@ export default function Home ({ words } : Props) {
       </Head>
       <Header />
       <section id="hero" className='snap-start'>
-        <Hero words={words} />
+        <Hero words={wordList} />
       </section>
       <section id="about" className='snap-start'>
         <About />
