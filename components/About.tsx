@@ -30,13 +30,11 @@ export default function About() {
                 <div className="px-0 space-y-5 xl:space-y-10 md:px-10">
                     <h4 className="mt-4 text-2xl font-semibold tracking-widest lg:text-4xl md:mt-0">Here is a <span className="underline decoration-[#F7AB0A]">little</span> background</h4>
                     <p className="text-base tracking-widest">
-                        Hi my name is Victor Omorogbe and I enjoy creating things that live on the internet.
-                        My interest in technology (in general) started back from when I was a kid watching cartoons 
-                        such as jimmy neutron, it turns out it is tougher and more interesting than I saw in movies, so I 
-                        searched the internet for what I can do in tech and I found software development, I started with introduction to web development. 
-                        I fully got into web and android development back in 2019 when I was in my final year in high school, fast foward to today I 
-                        am in the web3 space it is challenging and fun at the same time, I have since quit the android development space because
-                        I feel I have enough challenges and fun building things that live on the web.
+                        Hi, my name is Victor Omorogbe and I enjoy creating things that live on the internet.
+                        My interest in technology started when I was a child. Then, I used to watch Jimmy Neutron and it made me love Science and Technology.
+                        Technology in real life, turned out to be more complicated and interesting than what I saw in the movies. So, I searched the internet for technical skills that I could acquire and I found out about Software development.
+                        I got into web and android development in 2019 and at that time, I was still in my final year in high school. Later on, I quit android development because I found out that there are lots of opportunities that I could explore in the web.
+                        Today, I am proudly in the Web 3 space as a Software developer.
                     </p>
                 </div>
             </div>
