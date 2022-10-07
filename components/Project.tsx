@@ -20,8 +20,8 @@ export default function Project({  image, title, description, index, length }: P
                                 viewport={{ once: true }}
                                 src={`${urlFor(image)}`} className="w-[285px] md:w-[450px] min-h-64 max-h-64 h-64 md:min-h-[300px] md:max-h-[300px] md:h-[300px]" />
                         </div>
-                        <div className="space-y-2.5 max-w-[300px] lg:max-w-lg">
-                            <h4 className="text-lg font-semibold text-center md:text-3xl xl:text-4xl">
+                        <div className="space-y-1.5 max-w-[300px] lg:max-w-lg">
+                            <h4 className="text-lg font-semibold text-center md:text-3xl xl:text-4xl min-h-[50px]">
                                 <span className="underline decoration-[#F7AB0A]/50">Case study {index + 1} of {length}:</span> {title}
                             </h4>
                             <p className="px-5 text-lg text-center">{description}</p>
