@@ -28,7 +28,7 @@ export default function About() {
                 alt="Picture of Victor"
                 className="w-56 h-56 md:mb-0 flex-shrink-0 object-cover rounded-full md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[500px]"/>
                 <div className="px-0 space-y-5 xl:space-y-10 md:px-10">
-                    <h4 className="text-2xl font-semibold tracking-widest lg:text-4xl">Here is a <span className="underline decoration-[#F7AB0A]">little</span> background</h4>
+                    <h4 className="mt-4 text-2xl font-semibold tracking-widest lg:text-4xl md:mt-0">Here is a <span className="underline decoration-[#F7AB0A]">little</span> background</h4>
                     <p className="text-base tracking-widest">
                         Hi my name is Victor Omorogbe and I enjoy creating things that live on the internet.
                         My interest in technology (in general) started back from when I was a kid watching cartoons 
