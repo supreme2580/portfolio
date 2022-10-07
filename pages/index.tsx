@@ -46,7 +46,7 @@ export default function Home ({ words, experience, skills, projects } : Props) {
       <section id='projects'>
         <Projects projects={projects} />
       </section>
-      <section id='contact' className='py-16'>
+      <section id='contact' className='py-8'>
         <Contact />
       </section>
     </div>
