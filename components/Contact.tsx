@@ -14,10 +14,10 @@ export default function Contact() {
         window.location.href = `mailto:victoromorogbe69@gmail.com?subject=${formData.subject}&body=Hi my name is ${formData.name}, ${formData.message} (${formData.email})`
     }
     return(
-        <div className="min-h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly max-auto items-center">
+        <div className="relative flex flex-col items-center px-10 text-center md:text-left md:flex-row max-w-7xl justify-evenly max-auto">
             <h3 className="uppercase tracking-[10px] text-gray-500 text-2xl absolute top-24">Contact Me</h3>
-            <div className="flex flex-col space-y-10 items-center mt-32">
-                <h4 className="text-2xl xl:text-4xl font-semibold text-center mt-5">Let{"'"}s build something cool.{" "}
+            <div className="flex flex-col items-center mt-32 space-y-10">
+                <h4 className="mt-5 text-2xl font-semibold text-center xl:text-4xl">Let{"'"}s build something cool.{" "}
                     <span className="decoration-[#F7AB0A]/50 underline">Let{"'"}s talk</span>
                 </h4>
                 <div className="space-y-5 max-w-[300px]">
@@ -34,7 +34,7 @@ export default function Contact() {
                         <p className="text-lg sm:text-2xl">victoromorogbe69@gmail.com</p>
                     </div>
                 </div>
-                <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 w-fit mx-auto">
+                <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col mx-auto space-y-2 w-fit">
                     <div className="flex flex-col space-x-0 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-2">
                         <input {...register("name")} type="text" className="contactInput" placeholder="Name" />
                         <input {...register("email")} type="email" className="contactInput" placeholder="Email" />

@@ -6,7 +6,7 @@ export default function About() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 2.5 }}
-            className="relative flex flex-col items-center min-h-screen px-5 mx-auto text-center md:text-left max-w-7xl xl:px-10">
+            className="relative flex flex-col items-center px-5 mx-auto text-center md:text-left max-w-7xl xl:px-10">
             <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl mt-20">About</h3>
             <div className="flex flex-col items-center mt-10 md:flex-row justify-evenly">
             <motion.img

@@ -14,12 +14,12 @@ export default function Hero({ words }: Props) {
         delaySpeed: 2000
     })
     return(
-        <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+        <div className="flex flex-col items-center justify-center h-screen space-y-8 overflow-hidden text-center">
             <BackgroundCircles />
-            <Image src={"/profilepic.jpg"} width={125} height={125} className="rounded-full relative mx-auto object-cover" alt="Profile Image" />
+            <Image src={"/profilepic.jpg"} width={125} height={125} className="relative object-cover mx-auto rounded-full" alt="Profile Image" />
             <div>
                 <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[10px] sm:tracking-[15px]">Software Engineer</h2>
-                <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-6xl font-semibold px-5 lg:px-10">
+                <h1 className="px-5 text-xl font-semibold sm:text-2xl md:text-4xl lg:text-6xl lg:px-10">
                     <span className="mr-3">{text}</span>
                     <Cursor cursorColor="#F7AB0A" />          
                 </h1>             
