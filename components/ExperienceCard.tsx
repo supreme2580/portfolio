@@ -44,7 +44,7 @@ export default function ExperienceCard({ image, title, name, techStack, startDat
             <div className="w-full px-0 md:px-10">
                 <h4 className="text-4xl font-light text-center">{title}</h4>
                 <p className="mt-1 text-2xl font-bold">{name}</p>
-                <div className="space-x-2 my-2 flex overflow-x-auto w-[300px] scrollbar-hide pr-12">
+                <div className="space-x-2 my-2 flex overflow-x-auto w-[300px] sm:w-[600px] md:w-[750px] scrollbar-hide pr-12">
                     {/* Tech used */}
                     {
                         techStack.map(
