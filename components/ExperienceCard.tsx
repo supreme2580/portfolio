@@ -56,7 +56,7 @@ export default function ExperienceCard({ image, title, name, techStack, startDat
                         )
                     }
                 </div>
-                <p className="py-5 text-gray-300 uppercase">{startDate} - {endDate ? endDate : "Till Now"}</p>
+                <p className="py-5 text-gray-300 uppercase">{startDate} - {endDate ? endDate : "Till Date"}</p>
             </div>
         </article>
     )
