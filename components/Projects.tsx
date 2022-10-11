@@ -21,13 +21,11 @@ export default function Projects({ projects }: Props) {
             <div className="relative z-20 flex w-full max-w-6xl px-5 space-x-5 overflow-x-scroll scrollbar-hide snap-x snap-mandatory mt-44">
                 {/* Projects */}
                 {
-                    projects.map((project, index) => <Project
+                    projects.map(project => <Project
                         key={project._id}
                         image={project.image.asset._ref}
                         title={project.title}
-                        description={project.description}
-                        length={projects.length}
-                        index={index} />
+                        description={project.description} />
                     )
                 }
             </div>
