@@ -22,17 +22,17 @@ export default function Contact() {
                         <span className="decoration-[#F7AB0A]/50 underline">Let{"'"}s talk</span>
                     </h4>
                     <div className="space-y-5 max-w-[300px] sm:max-w-full">
-                        <div className="flex items-center justify-center space-x-5">
+                        <div className="flex items-center justify-start space-x-2.5">
                             <PhoneIcon className="w-7 h-7 text-[#F7AB0A] animate-pulse" />
                             <p className="text-2xl">+234 8070889521</p>
                         </div>
-                        <div className="flex items-center justify-center space-x-5">
+                        <div className="flex items-center justify-start space-x-2.5">
                             <LocationMarkerIcon className="w-7 h-7 text-[#F7AB0A] animate-pulse" />
                             <p className="text-2xl">On the internet</p>
                         </div>
-                        <div className="flex items-center justify-center space-x-5">
+                        <div className="flex items-center justify-start space-x-2.5">
                             <MailIcon className="w-7 h-7 text-[#F7AB0A] animate-pulse" />
-                            <p className="text-lg sm:text-2xl">victoromorogbe69@gmail.com</p>
+                            <p className="text-2xl">victoromorogbe69@gmail.com</p>
                         </div>
                     </div>
                     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col mx-auto space-y-2 w-fit">
