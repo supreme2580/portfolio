@@ -4,6 +4,5 @@ export default interface Skills {
         asset: {
             _ref: string
         }
-    },
-    percentage: string
+    }
 }

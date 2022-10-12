@@ -73,8 +73,7 @@ export async function getServerSideProps() {
   const skillsQuery = `
     *[_type == "skills"]{
       _id,
-      image,
-      percentage
+      image
     }
   `
   const projectQuery = `

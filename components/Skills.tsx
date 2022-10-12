@@ -18,7 +18,7 @@ export default function Skills({ skills }: Props) {
             <h3 className="top-36 uppercase tracking-[3px] text-gray-500 text-sm absolute px-5">Hover over a skill for current proficiency</h3>
             <div className="absolute grid grid-cols-2 gap-5 px-5 md:grid-cols-3 xl:grid-cols-4 top-52">
                 {
-                    skills.map(skill => <Skill key={skill._id} image={skill.image.asset._ref} percentage={skill.percentage} />)
+                    skills.map(skill => <Skill key={skill._id} image={skill.image.asset._ref} />)
                 }
             </div>
             <h5 className="text-lg font-semibold mt-[900px] md:mt-[700px]">And much more</h5>
