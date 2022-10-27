@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.victoromorogbe.com/
+
+# Sitemaps
+Sitemap: https://www.victoromorogbe.com/sitemap.xml

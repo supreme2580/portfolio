@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@bradgarropy/next-seo": "^1.2.0",
@@ -15,6 +16,7 @@
     "framer-motion": "^7.5.1",
     "next": "12.3.1",
     "next-sanity": "^0.8.4",
+    "next-sitemap": "^3.1.29",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.36.1",
