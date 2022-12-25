@@ -10,7 +10,7 @@ interface Props {
 
 export default function Project({  image, title, description }: Props) {
     return(
-        <div key={Math.random()} className="flex flex-col items-center justify-center flex-shrink-0 h-auto py-10 my-4 space-y-5 shadow-2xl md:p-22">
+        <div key={Math.random()} className="flex flex-col items-center justify-center flex-shrink-0 h-auto py-10 my-4 space-y-5 shadow-2xl md:p-22 hover:cursor-pointer">
                         <div className="relative md:px-2.5 lg:px-0">
                             <motion.img
                                 initial={{ y: -300, opacity: 0 }}

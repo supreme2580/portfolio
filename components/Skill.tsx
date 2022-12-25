@@ -7,7 +7,7 @@ interface Props {
 
 export default function Skill({ image }: Props) {
     return(
-        <div className="group relative flex cursor-pointer">
+        <div className="group relative flex hover:cursor-pointer">
             <motion.img
                 initial={{ opacity: 0 }}
                 transition={{ duration: 1 }}
