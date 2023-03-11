@@ -16,7 +16,7 @@ export default function Hero({ words }: Props) {
     return(
         <div className="flex flex-col items-center justify-center h-screen space-y-8 overflow-hidden text-center">
             <BackgroundCircles />
-            <Image src={"/profilepic.jpg"} width={125} height={125} className="relative object-cover mx-auto rounded-full" alt="Profile Image" />
+            <Image src={"/pic_1.jpeg"} width={125} height={125} className="relative object-cover mx-auto rounded-full" alt="Profile Image" />
             <div>
                 <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[10px] sm:tracking-[15px]">Software Engineer</h2>
                 <h1 className="px-5 text-xl font-semibold sm:text-2xl md:text-4xl lg:text-6xl lg:px-10">
