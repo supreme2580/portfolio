@@ -25,12 +25,12 @@ function MyApp({ Component, pageProps }: AppProps) {
       ]}
       icon='/profilepic.jpg'
       facebook={{
-        image: '/profilepic.jpg',
+        image: '/pic_1.jpeg',
         url: 'https://www.facebook.com/victor.omorogbe.165',
         type: 'website'
       }}
       twitter={{
-        image: '/profilepic.jpg',
+        image: '/pic_1.jpeg',
         site: 'https://twitter.com/VictorOmorogbe3',
         card: 'summary'
       }}
