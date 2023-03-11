@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         'VICTOR OMOROGBE',
         'VICTOR OMOROGBE PORTFOLIO'
       ]}
-      icon='/profilepic.jpg'
+      icon='/pic_1.jpeg'
       facebook={{
         image: '/pic_1.jpeg',
         url: 'https://www.facebook.com/victor.omorogbe.165',
