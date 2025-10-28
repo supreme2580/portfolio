@@ -43,20 +43,7 @@ export default function ExperienceCard({ image, title, name, techStack, startDat
                 src={`${urlFor(image)}`} />
             <div className="w-full px-0 md:px-10">
                 <h4 className="text-4xl font-light text-center">{title}</h4>
-                <p className="mt-1 text-2xl font-bold">{name}</p>
-                <div className="space-x-2 my-2 flex overflow-x-auto w-[300px] sm:w-[600px] md:w-[750px] scrollbar-hide pr-12">
-                    {/* Tech used */}
-                    {
-                        techStack.map(
-                            item => (
-                                <div className="min-w-[55px] h-14 relative" key={item.asset._ref}>
-                                    <Image src={`${urlFor(item.asset._ref)}`} width={50} height={50} className="object-center rounded-full" layout="fill" />
-                                </div>
-                            )
-                        )
-                    }
-                </div>
-                <p className="py-5 text-gray-300 uppercase">{startDate} - {endDate ? endDate : "Till Date"}</p>
+                <p className="py-5 text-gray-300 uppercase text-center">{startDate} - {endDate ? endDate : "Till Date"}</p>
             </div>
         </article>
     )

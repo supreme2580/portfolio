@@ -1,4 +1,3 @@
-import Image from "next/image"
 import BackgroundStripe from "./BackgroundStripe"
 import { motion } from "framer-motion"
 import Proj from "../projects"

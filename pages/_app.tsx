@@ -1,8 +1,14 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import SEO from "@bradgarropy/next-seo"
+import { useState, useEffect } from 'react';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  if (!mounted) return null;
   return <>
     <SEO
       title="Victor Omorogbe Portfolio"
@@ -35,7 +41,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         card: 'summary'
       }}
     />
-    <Component {...pageProps} />
+    {
+      mounted && <Component {...pageProps} />
+    }
   </>
 }
 

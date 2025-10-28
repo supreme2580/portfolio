@@ -4,22 +4,19 @@ import Contact from '../components/Contact'
 import Experience from '../components/Experience'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import { sanityClient } from "../sanity"
 import Word from '../words'
 import Exp from "../exp"
 import Skl from '../skills'
-import Proj from '../projects'
 
 interface Props {
   words: [Word],
   experience: [Exp],
-  skills: [Skl],
-  projects: [Proj]
+  skills: [Skl]
 }
 
-export default function Home ({ words, experience, skills, projects } : Props) {
+export default function Home ({ words, experience, skills }: Props) {
   var wordList: string[] = []
   words.map(word => wordList.push(word.word))
   return (
@@ -40,9 +37,6 @@ export default function Home ({ words, experience, skills, projects } : Props) {
       </section>
       <section id='skills'>
         <Skills skills={skills} />
-      </section>
-      <section id='projects'>
-        <Projects projects={projects} />
       </section>
       <section id='contact' className='pb-8'>
         <Contact />
@@ -74,24 +68,20 @@ export async function getServerSideProps() {
       image
     }
   `
-  const projectQuery = `
-    *[_type == "projects"]{
-      _id,
-      image,
-      title,
-      description
-    }
-  `
   const words = await sanityClient.fetch(wordsQuery)
   const experience = await sanityClient.fetch(experienceQuery)
   const skills = await sanityClient.fetch(skillsQuery)
-  const projects = await sanityClient.fetch(projectQuery)
+  
+  // Sort experience by start date (most recent first)
+  const sortedExperience = experience.sort((a: Exp, b: Exp) => {
+    return new Date(b.startDate).getTime() - new Date(a.startDate).getTime()
+  })
+  
   return {
     props: {
       words,
-      experience,
-      skills,
-      projects
+      experience: sortedExperience,
+      skills
     }
   }
 }
