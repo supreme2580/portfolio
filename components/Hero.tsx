@@ -18,7 +18,7 @@ export default function Hero({ words }: Props) {
             <BackgroundCircles />
             <Image src={"/pic_1.jpeg"} width={125} height={125} className="relative object-cover mx-auto rounded-full" alt="Profile Image" />
             <div>
-                <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[10px] sm:tracking-[15px]">Software Engineer</h2>
+                <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[10px] sm:tracking-[15px]">Software Developer</h2>
                 <h1 className="px-5 text-xl font-semibold sm:text-2xl md:text-4xl lg:text-6xl lg:px-10">
                     <span className="mr-3">{text}</span>
                     <Cursor cursorColor="#F7AB0A" />          
@@ -28,7 +28,7 @@ export default function Hero({ words }: Props) {
                 <Link href="#about"><a><button className="heroButton">About</button></a></Link>
                 <Link href="#experience"><a><button className="heroButton">Experience</button></a></Link>
                 <Link href="#skills"><a><button className="heroButton">Skills</button></a></Link>
-                <Link href="#projects"><a><button className="heroButton">Projects</button></a></Link>
+                <Link href="#contact"><a><button className="heroButton">Contact Me</button></a></Link>
             </div>
         </div>
     )
