@@ -34,7 +34,7 @@ export default function About() {
                         My interest in technology started when I was a child. Then, I used to watch Jimmy Neutron and it made me love Science and Technology.
                         Technology in real life, turned out to be more complicated and interesting than what I saw in the movies. So, I searched the internet for technical skills that I could acquire and I found out about Software development.
                         I got into web and android development in 2019 and at that time, I was still in my final year in high school. Later on, I quit android development because I found out that there are lots of opportunities that I could explore in the web.
-                        Today, I am proudly in the Web 3 space as a Software developer.
+                        Today, I am proudly in the Web3 space as a Software developer.
                     </p>
                 </div>
             </div>
