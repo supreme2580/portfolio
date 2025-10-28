@@ -21,7 +21,7 @@ export default function Skills({ skills }: Props) {
                     skills.map(skill => <Skill key={skill._id} image={skill.image.asset._ref} />)
                 }
             </div>
-            <h3 className="bottom-0 uppercase tracking-[3px] text-gray-500 text-sm absolute px-5">And many more in the Web2, Web3, mobile, and gaming fields.</h3>
+            <h3 className="-bottom-10 md:bottom-0 uppercase tracking-[3px] text-gray-500 text-sm absolute px-5">And many more in the Web2, Web3, mobile, and gaming fields.</h3>
             <div className="text-lg font-semibold mt-[900px] md:mt-[700px]" />
         </motion.div>
     )
