@@ -65,7 +65,8 @@ export async function getServerSideProps() {
   const skillsQuery = `
     *[_type == "skills"]{
       _id,
-      image
+      image,
+      name
     }
   `
   const words = await sanityClient.fetch(wordsQuery)

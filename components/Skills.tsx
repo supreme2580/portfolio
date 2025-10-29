@@ -18,11 +18,11 @@ export default function Skills({ skills }: Props) {
             <h3 className="top-36 uppercase tracking-[3px] text-gray-500 text-sm absolute px-5">These are some of the skills I{"'"}ve acquired over time</h3>
             <div className="absolute grid grid-cols-2 gap-5 px-5 sm:grid-cols-4 top-52">
                 {
-                    skills.map(skill => <Skill key={skill._id} image={skill.image.asset._ref} />)
+                    skills.map(skill => <Skill key={skill._id} image={skill.image.asset._ref} name={skill.name} />)
                 }
             </div>
             <h3 className="-bottom-10 sm:bottom-0 uppercase tracking-[3px] text-gray-500 text-sm absolute px-5">And many more in the Web2, Web3, mobile, and gaming fields.</h3>
-            <div className="text-lg font-semibold mt-[900px] sm:mt-[600px] xl:mt-[700px]" />
+            <div className="text-lg font-semibold mt-[1050px] sm:mt-[675px] md:mt-[650px] xl:mt-[750px]" />
         </motion.div>
     )
 }
