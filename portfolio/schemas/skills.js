@@ -9,8 +9,8 @@ export default {
             type: "image"
         },
         {
-            name: "percentage",
-            title: "Percentage",
+            name: "name",
+            title: "Name",
             type: "string"
         },
     ]
